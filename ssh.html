@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-<body>
+<body style="background-color:#c4c4df; font-family: 'Courier New', Courier, monospace; padding: 25px;">
     <p></p>
-    <textarea style="background-color:#FFF4A3; width: 650px; height: 50px;"
+    <textarea style="background-color:#FFF4A3; width: 650px; height: 50px; border:0px"
         id="textarea">ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPFEKmdjKy664zJAiwYlsorI2UgY7dhAAEPZw7PPY4A8qtYQUG29dxHqTW+GB/pnlzpfxLthrkcRpdsCIiwjarw=</textarea>
     <br>
-    <button style="background-color:#c4c4df;" onclick="copy()">Copy Public SSH Key</button>
+    <button style="background-color:#0505ae; color: white;padding: 9px; border:0px" onclick="copy()">Copy SSH
+        Key</button>
     <script>
         function copy() {
             let textarea = document.getElementById("textarea");
+
             textarea.select();
             document.execCommand("copy");
         }
